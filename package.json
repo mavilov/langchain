@@ -1,0 +1,22 @@
+{
+  "name": "langchain",
+  "version": "1.0.0",
+  "description": "Uses langchain library by creating a tool and ...TODO",
+  "keywords": [
+    "coding challenge",
+    "home assignment"
+  ],
+  "license": "ISC",
+  "author": "Maksim Avilov",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "develop": "tsx watch src/index.ts",
+    "test": "test"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.0.4",
+    "@langchain/ollama": "^1.0.1",
+    "langchain": "^1.0.4"
+  }
+}
