@@ -12,8 +12,8 @@ export const getNationality = tool(
     const countries = data.country;
     if (countries && countries.length > 0) {
       const textualResponse = countries
-        .sort((a: any, b: any) => b.probability - a.probability)
-        .map((country: any) => {
+        .sort((a, b) => b.probability - a.probability)
+        .map((country) => {
           return `Country: ${country.country_id}, Probability: ${Math.round(
             country.probability * 100
           )}%`;
