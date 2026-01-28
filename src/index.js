@@ -7,12 +7,11 @@ const agent = createAgent({
   tools: [getWeather, getNationality],
 });
 
-/* const response = await agent.invoke({
+const response = await agent.invoke({
   messages: [{ role: "user", content: "What's the weather in Tokyo?" }],
 });
- */
 
-const response = await agent.invoke({
+/* const response = await agent.invoke({
   messages: [
     {
       role: "user",
@@ -20,5 +19,5 @@ const response = await agent.invoke({
     },
   ],
 });
-
-console.log(response);
+ */
+response.messages.forEach((message) => console.log(message.content));
