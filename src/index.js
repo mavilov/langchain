@@ -1,6 +1,6 @@
 import { createAgent } from "langchain";
-import { getWeather } from "./tools/weather.ts";
-import { getNationality } from "./tools/nationality.ts";
+import { getWeather } from "./tools/weather.js";
+import { getNationality } from "./tools/nationality.js";
 
 const agent = createAgent({
   model: "ollama:llama3.1",

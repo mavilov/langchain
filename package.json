@@ -11,7 +11,7 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "develop": "tsx watch src/index.js",
+    "develop": "node --watch src/index.js",
     "test": "node --test tests/**/*.test.js"
   },
   "dependencies": {
